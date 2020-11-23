@@ -1,1 +1,6 @@
 新建项目：ng new ”项目名称“
+新建组件 ng g c name //组件名称
+ng g c name --style less/sass/scss  设置基于less/sass/scss
+新建路由组件：ng generate module app-routing --flat --module=app
+新建模块 ng generate module name
+创建路由守卫 ng generate guard auth/auth
