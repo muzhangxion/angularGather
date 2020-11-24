@@ -1,0 +1,20 @@
+新建项目：vue init webpack ”项目名称“ || vue create ”项目名称“
+
+项目目结构：
+├── public                     # 静态资源
+│   ├── favicon.ico                # favicon图标
+│   └── index.html                 # html模板
+├── src                        # 源代码
+│   ├── components                 # 全局公用组件
+│   ├── router                     # 路由
+│   ├── store                      # 全局store管理
+│   ├── views                      # views所有页面
+│   ├── App.vue                    # 入口页面
+│   ├── main.js                    # 入口文件 加载组件 初始化等
+├── .borwserslistrc            # 浏览器兼容相关
+├── .env.xxx                   # 环境变量配置
+├── .eslintrc.js               # eslint 配置项
+├── .gitignore                 # git忽略文件设置
+├── .babel.config.js           # babel-loader 配置
+├── package.json               # package.json
+└── vue.config.js              # vue-cli 配置
