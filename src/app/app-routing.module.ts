@@ -14,6 +14,10 @@ const routes: Routes = [
     data: {
       title: '测试'
     }
+  },
+  { 
+    path: 'customers',
+    loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule)
   }
 ];
 
