@@ -1,12 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { TestComponent } from './test/test.component';
+import { RichTextComponent } from './rich-text/rich-text.component';
 
 const routes: Routes = [
   {
     path: '',
     redirectTo: 'test',
     pathMatch: 'full'
+  },
+  {
+    path: 'richtext',
+    component: RichTextComponent,
+    data: {
+      title: '富文本'
+    }
   },
   {
     path: 'test',
