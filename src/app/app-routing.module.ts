@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { TestComponent } from './test/test.component';
 import { RichTextComponent } from './rich-text/rich-text.component';
+import { UploadComponent } from './upload/upload.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,13 @@ const routes: Routes = [
   {
     path: 'test',
     component: TestComponent,
+    data: {
+      title: '测试'
+    }
+  },
+  {
+    path: 'upload',
+    component: UploadComponent,
     data: {
       title: '测试'
     }
