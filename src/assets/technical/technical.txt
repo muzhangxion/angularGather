@@ -5,3 +5,20 @@ ng g c name --style less/sass/scss  设置基于less/sass/scss
 新建模块 ng generate module name
 创建路由守卫 ng generate guard auth/auth
 创建一个带路由的特性模块 ng generate module name --route name --module app.module
+
+ng generate component example -it 生成内联模版
+ng generate directive my-directive - 生成一个新指令
+ng generate pipe my-pipe - 生成一个新管道
+ng generate service my-service - 生成一个新服务
+ng generate route my-route - 生成一个新路由
+ng generate class my-class - 生成一个简易的模型类
+
+以下可能常用的命令参数有:
+--flat 表示是否不需要创建文件夹
+--inline-template (-it) 模板是否应该放在ts文件里
+--inline-style (-is) 样式是否应该放在ts文件里.
+--spec 是否需要创建spec文件(测试文件)
+--view-encapsulation (-ve) View Encapsulation策略 (简单理解为样式文件的作用范围策略).
+--change-detection (-cd) 变化检查策略.
+--prefix 设定这个component的前缀
+--dry-run (-d), 打印出生成的文件列表, 而不直接生成.
